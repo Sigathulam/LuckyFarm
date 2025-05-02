@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-image: url("background.jpg"); /* Replace with your image */
+  background-image: url("background.jpg"); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -21,7 +21,7 @@ html {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.4);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -179,7 +179,7 @@ html {
 .footer-logo-bar img {
   width: 46px;
   height: 34px;
-  margin-right: 15px; /* Increased space here */
+  margin-right: 15px; 
   background: #a3ec6b;
   mix-blend-mode: luminosity;
 }
