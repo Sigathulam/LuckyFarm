@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
 }
+
 html {
   margin: 0;
   padding: 0;
@@ -87,6 +88,11 @@ html {
   text-decoration: none;
 }
 
+.navbar a:active,
+.navbar a:focus {
+  color: #a3ec6b;
+}
+
 .contact {
   display: flex;
   align-items: center;
@@ -148,7 +154,6 @@ html {
 
 .footer-centered {
   background-color: #a3ec6b;
-  /* padding: 20px; */
   font-size: 25px;
   color: #000;
   font-family: "Segoe UI", sans-serif;
@@ -198,25 +203,22 @@ html {
   gap: 20px;
   margin-bottom: 20px;
   width: 50%;
-  background-color:aqua;
 }
 
 .footer-address {
-  /* flex: 1; */
   min-width: 250px;
-  /* background-color:aliceblue; */
 }
-.footer-address .address{
+
+.footer-address .address {
   font-size: 20px;
 }
 
 .footer-map {
-  /* flex: 1; */
   width: 550px;
 }
 
 .footer-map iframe {
-  width: 600px;
+  width: 100%;
   height: 300px;
   border: none;
   border-radius: 10px;
@@ -226,7 +228,6 @@ html {
   text-align: center;
   margin-bottom: 10px;
   display: flex;
-  /* background-color: #000; */
   flex-direction: column;
   gap: 10px;
 }
@@ -243,14 +244,96 @@ html {
   font-size: 14px;
   color: #666;
 }
-.footer-flex{
-  /* background-color:aqua ; */
-  width: 35%;
-  margin: auto;
-  height: auto;
-  padding: 20px;
+
+.footer-flex {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 180px; /* Adjust logo width on mobile */
+    height: 50px; /* Adjust logo height */
+  }
+
+  .main-heading {
+    font-size: 40px; /* Reduce main heading font size */
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust image size for mobile */
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-logo-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-map iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* Media Queries for Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 18px; /* Smaller font size for mobile links */
+  }
+
+  .main-heading {
+    font-size: 36px; /* Further reduce font size on small screens */
+  }
+
+  .footer-logo-bar h2 {
+    font-size: 20px; /* Smaller footer logo text */
+  }
+
+  .footer-address .address {
+    font-size: 18px; /* Smaller text for address */
+  }
+
+  .footer-map iframe {
+    height: 200px; /* Adjust iframe height for mobile */
+  }
+
+  .footer-social a img {
+    width: 25px;
+    height: 25px;
+  }
 }
