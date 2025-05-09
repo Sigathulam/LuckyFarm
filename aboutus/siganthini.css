@@ -223,6 +223,7 @@ body {
   padding: 12px;
   gap: 16px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footer-bottom h2 {
