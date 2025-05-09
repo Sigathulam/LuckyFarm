@@ -1,179 +1,388 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="bg">
-      <div class="overlay">
-        <div class="about-us">
-          <div class="header">
-            <div class="logo">
-              <img src="logo.jpg" alt="Logo" class="logo-img" />
-              <h1 class="logo-text">Lucky Farm</h1>
-            </div>
-            <nav class="navbar">
-              <a href="#"class="active">Home</a>
-              <a href="#"class="active">About Us</a>
-              <a href="#"class="active">Products</a>
-              <a href="#"class="active">Language</a>
-              <div class="contact"class="active">
-                <a href="tel:+919842583652" class="phone-link"><svg class="phone-icon" width="20" height="18" viewBox="0 0 24 27" fill="red" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.72 3.38889C4.8 4.67444 5 5.93111 5.32 7.13L3.72 8.86333C3.17333 7.13 2.82667 5.29556 2.70667 3.38889H4.72ZM17.8667 20.7511C19 21.0978 20.16 21.3144 21.3333 21.4011V23.5533C19.5733 23.4233 17.88 23.0478 16.2667 22.47L17.8667 20.7511ZM6 0.5H1.33333C0.6 0.5 0 1.15 0 1.94444C0 15.5078 10.1467 26.5 22.6667 26.5C23.4 26.5 24 25.85 24 25.0556V20.0144C24 19.22 23.4 18.57 22.6667 18.57C21.0133 18.57 19.4 18.2811 17.9067 17.7467C17.7733 17.6889 17.6267 17.6744 17.4933 17.6744C17.1467 17.6744 16.8133 17.8189 16.5467 18.0933L13.6133 21.2711C9.84 19.1767 6.74667 15.84 4.82667 11.7522L7.76 8.57444C8.13333 8.17 8.24 7.60667 8.09333 7.10111C7.6 5.48333 7.33333 3.75 7.33333 1.94444C7.33333 1.15 6.73333 0.5 6 0.5Z" fill=""/>
-                </svg>
-                <span class="header-phone-number">+91 9842583652</span></a>
-              </div>
-            </nav>
-          </div>
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-          <h2 class="main-heading">About Us</h2>
+html,
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
 
-          <div class="about-section">
-            <div class="about-image">
-              <img src="1.png" alt="Training" />
-            </div>
-            <div class="about-text">
-              <h3 class="heading">Farm Visiting</h3>
-              <h2 style="font-size: 35px; font-family: Rubik, sans-serif">
-                Arputha College of Arts and Science-PUDUKKOTTAI
-              </h2>
-              <br />
-              <p class="text">
-                Curabitur tempor quis eros tempus lacinia. Nam bibendum
-                pellentesque quam a convallis. Sed ut vulputate nisi. Integer in
-                felis sed leo vestibulum venenatis. Suspendisse quis arcu sem.
-                Aenean feugiat ex eu vestibulum vestibulum.
-              </p>
-            </div>
-          </div>
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
-          <div class="about-section">
-            <div class="about-image">
-              <img src="2.png" alt="Training" />
-            </div>
-            <div class="about-text">
-              <h3 class="heading">Farm Visiting</h3>
-              <h2 style="font-size: 35px; font-family: Rubik, sans-serif">
-                Rural Self Employment Training Institution(RSETI)-TANJAVUR
-              </h2>
-              <br />
-              <p class="text">
-                Curabitur tempor quis eros tempus lacinia. Nam bibendum
-                pellentesque quam a convallis. Sed ut vulputate nisi. Integer in
-                felis sed leo vestibulum venenatis. Suspendisse quis arcu sem.
-                Aenean feugiat ex eu vestibulum vestibulum.
-              </p>
-            </div>
-          </div>
+/* Overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
 
-          <div class="about-section">
-            <div class="about-image">
-              <img src="3.jpg" alt="Training" />
-            </div>
-            <div class="about-text">
-              <h3 class="heading">Mushroom Training</h3>
-              <h2 style="font-size: 35px; font-family: Rubik, sans-serif">
-                Krishi Vigyan Kendra(KVK)-KALLAKURICHI
-              </h2>
-              <br />
-              <p class="text">
-                Curabitur tempor quis eros tempus lacinia. Nam bibendum
-                pellentesque quam a convallis. Sed ut vulputate nisi. Integer in
-                felis sed leo vestibulum venenatis. Suspendisse quis arcu sem.
-                Aenean feugiat ex eu vestibulum vestibulum.
-              </p>
-            </div>
-          </div>
-          <div class="about-section">
-            <div class="about-image">
-              <img src="4.jpg" alt="Training" />
-            </div>
-            <div class="about-text">
-              <h3 class="heading">Mushroom Training</h3>
-              <p class="text">
-                Curabitur tempor quis eros tempus lacinia. Nam bibendum
-                pellentesque quam a convallis. Sed ut vulputate nisi. Integer in
-                felis sed leo vestibulum venenatis. Suspendisse quis arcu sem.
-                Aenean feugiat ex eu vestibulum vestibulum.
-              </p>
-            </div>
-          </div>
-          <!-- New Map Section -->
-          <div class="about-section">
-            <div class="about-text" style="width: 100%; text-align: center">
-              <h3 class="heading">Visit Us</h3>
-              <p class="text">
-                Here is our location on the map. <br />Come see us in person!
-              </p>
-            </div>
-            <div class="about-image" style="width: 100%">
-              <!-- Right: Map -->
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps?q=Lucky+Farm,+Udayarpalayam,+Ariyalur+dt+621804&output=embed"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <h2>Where to find us?</h2>
-      <h3>Let's Get In Touch</h3>
-      <div class="link-container">
-          <div class="card location">
-            <svg width="78" height="110" viewBox="0 0 78 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M39 0C17.715 0 0.5 17.215 0.5 38.5C0.5 48.07 3.25 57.035 8.255 65.12C13.48 73.59 20.355 80.85 25.635 89.32C28.22 93.445 30.09 97.295 32.07 101.75C33.5 104.775 34.655 110 39 110C43.345 110 44.5 104.775 45.875 101.75C47.91 97.295 49.725 93.445 52.31 89.32C57.59 80.905 64.465 73.645 69.69 65.12C74.75 57.035 77.5 48.07 77.5 38.5C77.5 17.215 60.285 0 39 0ZM39 53.625C31.41 53.625 25.25 47.465 25.25 39.875C25.25 32.285 31.41 26.125 39 26.125C46.59 26.125 52.75 32.285 52.75 39.875C52.75 47.465 46.59 53.625 39 53.625Z" fill="black"/>
-              </svg>
-              <h4>Location</h4>
-              <p>1007, North Street, O. Koothur (PO), Ariyalur (Tk) & (Dt), 621705</p>
-          </div>
-          <div class="card email">
-              <svg width="80" height="80" viewBox="0 0 138 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M123.8 0H14.2C6.665 0 0.5685 6.1875 0.5685 13.75L0.5 96.25C0.5 103.813 6.665 110 14.2 110H123.8C131.335 110 137.5 103.813 137.5 96.25V13.75C137.5 6.1875 131.335 0 123.8 0ZM123.8 27.5L69 61.875L14.2 27.5V13.75L69 48.125L123.8 13.75V27.5Z" fill="black"/>
-                  </svg>
-              <h4>Email</h4>
-              <p>arulkaruppu8@gmail.com</p>
-          </div>
-          <div class="card whatsapp">
-              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <rect width="120" height="120" fill="url(#pattern0_332_61)"/>
-                  <defs>
-                  <pattern id="pattern0_332_61" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_332_61" transform="scale(0.00520833)"/>
-                  </pattern>
-                  <image id="image0_332_61" width="192" height="192" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
-                  </defs>
-                  </svg>
-              <h4>WhatsApp</h4>
-              <p>+91 9842583652</p>
-          </div>
-      </div>
-  </div>
-        </div>
-      </footer>
-    <script>
-      // Select all the navbar links
-      const navLinks = document.querySelectorAll(".navbar a");
+/* About Us Main Container */
+.about-us {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
 
-      // Add event listener to each link
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          // Remove 'active' class from all links
-          navLinks.forEach((link) => link.classList.remove("active"));
+/* Header Section */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-          // Add 'active' class to the clicked link
-          link.classList.add("active");
-        });
-      });
-    </script>
-  </body>
-</html>
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #a3ec6b;
+  border-radius: 20px 0;
+  width: 235px;
+  height: 59px;
+  padding: 12px;
+}
+
+.logo-img {
+  width: 46px;
+  height: 34px;
+  background: #a3ec6b;
+  mix-blend-mode: luminosity;
+}
+
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 29.6px;
+  color: #000;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.navbar a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:active,
+.navbar a:focus {
+  color: #a3ec6b;
+}
+
+/* Contact in Navbar */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  font-size: 20px;
+  color: white;
+}
+
+.header-phone-number {
+  font-size: 20px;
+  color: white;
+}
+
+.phone-icon {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* Main Heading */
+.main-heading {
+  font-family: "Rubik", "Times New Roman", Times, serif;
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1280px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 461px;
+  height: 390px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 739px;
+}
+
+.heading {
+  font-family: Rubik, "Times New Roman";
+  font-size: 43px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Map Section */
+.map iframe {
+  width: 750px;
+  height: 350px;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer-centered {
+  background-color: #a3ec6b;
+  font-size: 25px;
+  color: #000;
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+  padding: 30px 20px 10px 20px;
+}
+
+.footer-flex {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-address {
+  min-width: 280px;
+}
+
+.footer-address .address {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  width: 100%;
+}
+
+.footer-bottom h2 {
+  font-size: 28px;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-bottom h3 {
+  font-size: 42px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Cards */
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 226px;
+  height: 209px;
+  background: rgb(30, 161, 30);
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+}
+
+.card svg {
+  width: 78px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.card h4 {
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+}
+
+.card p {
+  font-size: medium;
+  color: black;
+  margin: 0;
+}
+
+/* Specific Card SVG Sizes */
+.card.location svg {
+  width: 120px;
+  height: 120px;
+}
+
+.card.email svg {
+  width: 80px;
+  height: 100px;
+}
+
+.card.whatsapp svg {
+  width: 78px;
+  height: 110px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 50px;
+  }
+
+  .main-heading {
+    font-size: 40px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .card svg {
+    width: 60px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .footer {
+    padding: 8px;
+    gap: 12px;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+  }
+
+  .footer h3 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 12px;
+    height: auto;
+  }
+
+  .card svg {
+    display: none;
+  }
+
+  .card h4 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+}
