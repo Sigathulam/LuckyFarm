@@ -89,7 +89,7 @@ html {
 }
 
 .navbar a:active,
-.navbar a:focu {
+.navbar a:focus {
   color: #a3ec6b;
 }
 
