@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
   overflow: hidden;
 }
 
@@ -55,12 +55,12 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px; /* Reduced gap */
   background: #a3ec6b;
-  border-radius: 20px 0;
-  width: 235px;
-  height: 59px;
-  padding: 12px;
+  border-radius: 15px 0; /* Reduced border radius */
+  width: 200px; /* Reduced width */
+  height: 50px; /* Reduced height */
+  padding: 8px; /* Reduced padding */
 }
 
 .logo-img {
@@ -73,7 +73,7 @@ body {
 .logo-text {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 29.6px;
+  font-size: 22px; /* Reduced font size */
   color: #000;
 }
 
@@ -81,14 +81,14 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 15px; /* Reduced gap */
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 
 .navbar a {
-  font-size: 24px;
+  font-size: 18px; /* Reduced font size */
   color: white;
   text-decoration: none;
 }
@@ -102,29 +102,59 @@ body {
 .contact {
   display: flex;
   align-items: center;
-  gap: 0px;
-  font-size: 20px;
+  gap: 5px; /* Reduced gap */
+  font-size: 16px; /* Reduced font size */
   color: white;
 }
 
 .header-phone-number {
-  font-size: 20px;
+  font-size: 16px; /* Reduced font size */
   color: white;
 }
 
 .phone-icon {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px; /* Reduced font size */
 }
 
 /* Main Heading */
 .main-heading {
   font-family: "Rubik", "Times New Roman", Times, serif;
-  font-size: 54px;
+  font-size: 40px; /* Reduced font size */
   font-weight: 600;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Reduced margin */
   color: white;
+}
+.about-us-section {
+  font-family: Lora, serif; /* Ensure this is the font you want */
+  color: white; /* Text color */
+  padding: 20px;
+  border-radius: 8px; /* Optional for rounded corners */
+  line-height: 1.6;
+}
+
+.about-us-section p {
+  font-size: 2rem; /* Heading size */
+  text-align: center; /* Center the heading */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.about-us-section ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding-left: 20px; /* Indentation for list */
+}
+
+.about-us-section ul li {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 15px; /* Indentation for list items */
+}
+
+.about-us-section p:last-child {
+  font-weight: bold; /* Emphasize the last sentence */
+  color: #a3ec6b; /* A rich green color */
 }
 
 /* About Section */
@@ -133,44 +163,44 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px; /* Reduced gap */
   max-width: 1280px;
-  margin-bottom: 60px;
+  margin-bottom: 40px; /* Reduced margin */
   flex-wrap: wrap;
 }
 
 .about-image img {
-  width: 461px;
-  height: 390px;
-  border-radius: 32px;
+  width: 350px; /* Reduced width */
+  height: 250px; /* Reduced height */
+  border-radius: 20px; /* Reduced border radius */
   object-fit: cover;
 }
 
 .about-text {
-  max-width: 739px;
+  max-width: 600px; /* Reduced width */
 }
 
 .heading {
   font-family: Rubik, "Times New Roman";
-  font-size: 43px;
+  font-size: 35px; /* Reduced font size */
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 10px; /* Reduced margin */
   color: white;
 }
 
 .text {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 24px; /* Reduced font size */
+  line-height: 30px; /* Adjusted line height */
   color: rgba(255, 255, 255, 0.8);
 }
 
 /* Map Section */
 .map iframe {
-  width: 750px;
-  height: 350px;
+  width: 650px; /* Reduced width */
+  height: 300px; /* Reduced height */
   border: none;
-  border-radius: 20px;
+  border-radius: 15px; /* Reduced border radius */
   display: block;
   margin: 0 auto;
 }
@@ -178,11 +208,11 @@ body {
 /* Footer */
 .footer-centered {
   background-color: #a3ec6b;
-  font-size: 25px;
+  font-size: 20px; /* Reduced font size */
   color: #000;
   font-family: "Segoe UI", sans-serif;
   width: 100%;
-  padding: 30px 20px 10px 20px;
+  padding: 20px 10px 8px 10px; /* Reduced padding */
 }
 
 .footer-flex {
@@ -192,48 +222,48 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px; /* Reduced gap */
 }
 
 .footer-address {
-  min-width: 280px;
+  min-width: 260px; /* Reduced width */
 }
 
 .footer-address .address {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 18px; /* Reduced font size */
+  line-height: 1.4; /* Reduced line height */
 }
 
 .footer-social {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 10px; /* Reduced gap */
 }
 
 .footer-social a img {
-  width: 40px;
-  height: 40px;
+  width: 35px; /* Reduced size */
+  height: 35px; /* Reduced size */
 }
 
 .footer-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px;
-  gap: 16px;
+  padding: 8px; /* Reduced padding */
+  gap: 10px; /* Reduced gap */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footer-bottom h2 {
-  font-size: 28px;
+  font-size: 32px; /* Reduced font size */
   color: #fff;
   margin: 0;
 }
 
 .footer-bottom h3 {
-  font-size: 42px;
+  font-size: 24px; /* Reduced font size */
   color: #fff;
   margin: 0;
 }
@@ -255,47 +285,46 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  width: 226px;
-  height: 209px;
+  width: 200px; /* Reduced width */
+  height: 180px; /* Reduced height */
   background: rgb(30, 161, 30);
   text-align: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
   font-size: small;
 }
 
 .card svg {
-  width: 78px;
-  height: 110px;
-  object-fit: contain;
+  width: 60px; /* Reduced size */
+  height: 80px; /* Reduced size */
 }
 
 .card h4 {
-  font-size: 20px;
+  font-size: 18px; /* Reduced font size */
   color: #000;
   margin: 0;
 }
 
 .card p {
-  font-size: medium;
+  font-size: small; /* Reduced font size */
   color: black;
   margin: 0;
 }
 
 /* Specific Card SVG Sizes */
 .card.location svg {
-  width: 120px;
-  height: 120px;
+  width: 100px; /* Reduced size */
+  height: 100px; /* Reduced size */
 }
 
 .card.email svg {
-  width: 80px;
-  height: 100px;
+  width: 70px; /* Reduced size */
+  height: 90px; /* Reduced size */
 }
 
 .card.whatsapp svg {
-  width: 78px;
-  height: 110px;
+  width: 70px; /* Reduced size */
+  height: 90px; /* Reduced size */
 }
 
 /* Responsive Design */
@@ -303,16 +332,16 @@ body {
   .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 12px; /* Reduced gap */
   }
 
   .logo {
-    width: 180px;
-    height: 50px;
+    width: 170px; /* Reduced width */
+    height: 45px; /* Reduced height */
   }
 
   .main-heading {
-    font-size: 40px;
+    font-size: 32px; /* Reduced font size */
   }
 
   .about-section {
@@ -322,12 +351,12 @@ body {
 
   .about-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px; /* Reduced width */
   }
 
   .about-text {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 8px; /* Reduced padding */
   }
 
   .link-container {
@@ -336,54 +365,34 @@ body {
   }
 
   .card {
-    width: 80%;
+    width: 85%; /* Reduced width */
     height: auto;
-    padding: 16px;
+    padding: 12px; /* Reduced padding */
   }
 
   .card svg {
-    width: 60px;
-    height: 80px;
+    width: 50px; /* Reduced size */
+    height: 70px; /* Reduced size */
   }
 }
 
-@media screen and (max-width: 480px) {
-  .navbar a {
-    font-size: 18px;
+@media screen and (max-width: 600px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .main-heading {
-    font-size: 36px;
+  .footer-address .address {
+    font-size: 16px; /* Reduced font size */
   }
 
-  .footer {
-    padding: 8px;
-    gap: 12px;
+  .footer-bottom h2,
+  .footer-bottom h3 {
+    font-size: 18px; /* Reduced font size */
   }
 
-  .footer h2 {
-    font-size: 20px;
-  }
-
-  .footer h3 {
-    font-size: 28px;
-  }
-
-  .card {
-    width: 90%;
-    padding: 12px;
-    height: auto;
-  }
-
-  .card svg {
-    display: none;
-  }
-
-  .card h4 {
-    font-size: 24px;
-  }
-
-  .card p {
-    font-size: 18px;
+  .footer-bottom {
+    padding: 5px; /* Reduced padding */
   }
 }
